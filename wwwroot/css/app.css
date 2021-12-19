@@ -1,0 +1,216 @@
+﻿body {
+    background: #EFF2F7;
+    font-family: Calibri;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+main {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+#sidebar {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 15px 0 0 15px;
+    justify-content: space-between;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
+    .header .row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 6px 17px;
+        font-weight: bold;
+    }
+
+    .header .details {
+        color: #5D11D5;
+    }
+
+#sidebar {
+    height: 500px;
+}
+
+    #sidebar .items {
+        border-top: 1px solid #f7f7f7;
+    }
+
+        #sidebar .items ul {
+            display: flex;
+            flex-direction: column;
+            padding-left: 10px;
+        }
+
+            #sidebar .items ul li {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin: 6px 17px;
+            }
+
+.total .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.total .vat {
+    background-color: #fbfbfb;
+    font-size: smaller;
+}
+
+.total .endtotal {
+    background-color: #5D11D5;
+    font-size: larger;
+    color: #FFF2FF;
+    border-radius: 0 0 10px 10px;
+}
+
+.nav-items ul {
+    display: flex;
+    flex-direction: row;
+}
+
+    .nav-items ul li {
+        background-color: #5D11D5;
+        width: 80px;
+        height: 80px;
+        list-style-type: none;
+        margin-right: 33px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        text-align: center;
+    }
+
+        .nav-items ul li i {
+            margin: 5px auto;
+            width: 35px;
+            height: 40px;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        .nav-items ul li .cook {
+            background-image: url(../img/chef.png);
+        }
+
+#body {
+    flex: 3;
+}
+
+.search input[type=text] {
+    border-radius: 10px;
+    height: 50px;
+    border: 0;
+    width: 820px;
+    margin-left: 39px;
+    background-repeat: no-repeat;
+    background-image: url(../img/search.png);
+    background-size: 40px;
+    background-position: 10px;
+    padding: 5px;
+    font-size: 25px;
+    direction: rtl;
+}
+
+.menu-items ul {
+    display: flex;
+    flex-direction: row;
+}
+
+    .menu-items ul li {
+        background-color: #fff;
+        width: 100px;
+        height: 100px;
+        list-style-type: none;
+        margin-right: 20px;
+        border-radius: 10px;
+        display: flex;
+        align-items: flex-end;
+    }
+
+        .menu-items ul li.coffee {
+            background: url(../img/coffee.png);
+        }
+
+        .menu-items ul li div {
+            width: 100%;
+            padding: 2px;
+            opacity: 0.6;
+            background-color: #fff;
+            color: #000;
+            text-align: center;
+        }
+
+@media (max-width:968px) {
+    main {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #sidebar {
+        display: flex;
+        flex-direction: column;
+        flex: 2;
+        background-color: #fff;
+        border-radius: 10px;
+        margin: 15px 0 0 15px;
+        justify-content: space-between;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+    }
+
+        .header .row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 6px 17px;
+            font-weight: bold;
+        }
+
+    #sidebar .items ul {
+        display: flex;
+        flex-direction: column;
+        padding-left: 10px;
+    }
+
+        #sidebar .items ul li {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 6px 17px;
+        }
+
+    .total .row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-weight: bold;
+        padding: 10px;
+    }
+
+    .search input[type=text] {
+        width: 500px;
+    }
+}

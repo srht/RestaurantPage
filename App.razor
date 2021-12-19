@@ -1,0 +1,63 @@
+﻿@inherits LayoutComponentBase
+
+<main>
+    <div id="sidebar">
+        <div class="header">
+            <div class="row">
+                <div>Table</div>
+                <div>1</div>
+            </div>
+            <div class="row details">
+                <div>Table</div>
+                <div>1</div>
+            </div>
+            <div class="items">
+                <ul>
+                    <li><span>SAR 26.00</span><span>item1 x 1</span></li>
+                    <li><span>SAR 26.00</span><span>item1 x 1</span></li>
+                    <li><span>SAR 26.00</span><span>item1 x 1</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="total">
+            <div class="row vat">
+                <div>SAR 8.87</div>
+                <div>الضريبة</div>
+            </div>
+            <div class="row endtotal">
+                <div>SAR 68.00</div>
+                <div>إجمالي</div>
+            </div>
+        </div>
+    </div>
+    <div id="body">
+        <div class="nav-items">
+            <ul>
+                <li><i class="cook"></i> Print</li>
+                <li><i class="cook"></i> Print</li>
+                <li><i class="cook"></i> Print</li>
+                <li><i class="cook"></i> Print</li>
+                <li><i class="cook"></i> Print</li>
+                <li><i class="cook"></i> Print</li>
+                <li><i class="cook"></i> Print</li>
+                <li><i class="cook"></i> Print</li>
+            </ul>
+        </div>
+        <div class="search">
+            <input type="text" name="keyword" />
+        </div>
+        <div class="menu-items">
+            <ul>
+                <li class="coffee"><div>قهوة</div></li>
+                <li class="coffee"><div>قهوة</div></li>
+                <li class="coffee"><div>قهوة</div></li>
+                <li class="coffee"><div>قهوة</div></li>
+                <li class="coffee"><div>قهوة</div></li>
+            </ul>
+        </div>
+    </div>
+</main>
+
+@code {
+    public int Count = 4;
+}
